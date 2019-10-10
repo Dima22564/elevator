@@ -1,0 +1,69 @@
+.standarts
+  padding: 0 0 101px
+  background: $white
+  position: relative
+  .bg-elem-1
+    position: absolute
+    top: 0
+    right: 0
+    width: 30%
+    height: 77%
+    +sm
+      top: 16%
+      width: 60%
+      height: 34%
+  .standart-wrapper
+    +lg
+      padding-top: 40px
+      position: relative
+      padding-bottom: 30px
+      background: $blue
+      color: $white
+      .standart
+        margin-bottom: 0
+    
+  .bg-elem-2
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 29%
+    height: 77%
+    +lg-one(display, none)
+  h2
+    margin-bottom: 85px
+  .standart
+    margin-bottom: 58px
+    .order
+      +md-one(order, 2 !important)
+    .row
+      +md-one(justify-content, center)
+    .text
+      font-size: 20px
+      line-height: 24px
+      +md-one(margin-top, 24px)
+    .img
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        border: 12px solid $blue
+        z-index: 0
+        top: -25px
+        +md-one(width, 90%)
+      &.orange
+        &::after
+          border-color: $orange
+      &.border-left
+        &::after
+          left: -20px
+          +md-one(left, 0)
+      &.border-right
+        &::after
+          right: -20px
+          +md-one(left, 0)
+      img
+        width: 100%
+        position: relative
+        z-index: 5

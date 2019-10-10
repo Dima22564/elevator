@@ -7,565 +7,105 @@
         <link type="image/x-icon" href="./img/favicon.ico" rel="shortcut icon">
         <link href="./libs/css/vendor.min.css" rel="stylesheet">
         <link href="./css/style.css" rel="stylesheet">
-        <title>Glass</title>
+        <title>БалтЛифт</title>
     </head>
     <body>
         <header class="header">
-            <div class="mobile-menu js-mobile-menu">
-                <ul class="nav-mobile">
-                    <li><a class="js-menu-mobile-link" href="#plat">О Платформе </a></li>
-                    <li><a class="js-menu-mobile-link" href="#blockchain">Технология</a></li>
-                    <li><a class="js-menu-mobile-link" href="#tech">Блокчейн</a></li>
-                    <li><a class="js-menu-mobile-link" href="#profits">Выгоды</a></li>
-                    <li><a class="js-menu-mobile-link" href="#dev">Развитие</a></li>
-                    <li><a class="js-close-popup" href="#contacts">Связаться с нами</a></li>
-                </ul>
-            </div>
-            <div class="container">
-                <div class="top-menu"><a class="logo" href><img src="./img/logo.png" alt></a>
-                    <div class="langs-wrapper js-langs">
-                        <div class="langs">
-                            <div class="lang"><span>RU</span></div>
-                            <div class="lang"><a href=""><span>RU</span></a></div>
-                            <div class="lang"><a href=""><span>RU</span></a></div>
-                        </div><i class="fa fa-caret-down" aria-hidden="true"></i>
-                    </div>
-                    <div class="burger-menu js-burger-menu"><i class="fa fa-bars js-open" aria-hidden="true"></i><img class="js-hide" src="./img/close-2.svg" alt></div>
-                    <nav>
-                        <ul class="nav">
-                            <li><a class="js-link" href="#plat">О Платформе </a></li>
-                            <li><a class="js-link" href="#blockchain">Технология</a></li>
-                            <li><a class="js-link" href="#tech">Блокчейн</a></li>
-                            <li><a class="js-link" href="#profits">Выгоды</a></li>
-                            <li><a class="js-link" href="#dev">Развитие</a></li>
-                            <li><a class="js-popup-show" href>Связаться с нами</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="content">
-                    <div class="row">
-                        <div class="col-xl-7 col-lg-7">
-                            <div class="text">
-                                <h1>GLASS</h1>
-                                <p class="desc">Многофункциональная платформа для организации защищенных онлайн-голосований с использованием блокчейн-технологии</p>
-                                <p class="small">Решение для крупных предприятий и государственных учреждений</p>
-                                <button class="create js-popup-show">Создать голосование</button>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 offset-xl-1 col-lg-5">
-                            <div class="header-icons">
-                                <div class="line"><img src="./img/icon-1.svg" alt><span>Прозрачность</span></div>
-                                <div class="line"><img src="./img/icon-2.svg" alt><span>Безопасность</span></div>
-                                <div class="line"><img src="./img/icon-3.svg" alt><span>Надежность</span></div>
-                                <div class="line"><img src="./img/icon-4.svg" alt><span>Легкая организация</span></div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="header-top">
+                <div class="container">
+                    <div class="content"><a class="logo" href><img src="./img/logo.png" alt></a><a class="tel" href="tel:+7 (812) 719-80-98"><img src="./img/phone.png" alt><span>+7 (812) 719-80-98</span></a><span class="burger-icon js-burger-icon"><img src="./img/burger.png" alt></span></div>
                 </div>
             </div>
+            <nav class="header-nav">
+                <div class="container">
+                    <div class="nav-links-wrapper js-burger-menu">
+                        <div class="nav-links"><a class="drop-link" href><span>Лифтовое оборудование</span><img src="./img/arrow-down.svg" alt></a><a href="">Парковочные системы</a><a href="">Портфолио</a><a href="">Инвестиции</a><a href="">О компании</a><a href="">Контакты</a><a class="tel" href="tel:+7 (812) 719-80-98"><img src="./img/phone-white.png" alt><span>+7 (812) 719-80-98</span></a></div>
+                    </div>
+                </div>
+            </nav>
         </header>
-        <div class="wrapper-for-bg">
-            <section class="adv" id="plat"><img class="bg-elem-1" src="./img/bg-elem-1.png" alt><img class="bg-elem-2" src="./img/bg-elem-2.png" alt>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-4 col-md-6 wow animated zoomIn" data-wow-delay="0.1s">
-                            <div class="adv-card"><img class="icon" src="./img/adv-1.svg" alt>
-                                <div class="text-block">
-                                    <p class="title">ОТКРЫТОЕ ГОЛОСОВАНИЕ</p>
-                                    <p class="text">Гарантированная идентификация избирателей и промежуточные результаты в реальном времени</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 wow animated zoomIn" data-wow-delay="0.3s">
-                            <div class="adv-card"><img class="icon" src="./img/adv-2.svg" alt>
-                                <div class="text-block">
-                                    <p class="title">ТАЙНОЕ ГОЛОСОВАНИЕ</p>
-                                    <p class="text">Полная анонимность избирателей и отсутствие дублирования голосов </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 wow animated zoomIn" data-wow-delay="0.5s">
-                            <div class="adv-card"><img class="icon" src="./img/adv-3.svg" alt>
-                                <div class="text-block">
-                                    <p class="title">ИНДИВИДУАЛЬНЫЙ СТИЛЬ</p>
-                                    <p class="text">Быстрая адаптация голосования под корпоративный стиль</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 wow animated zoomIn" data-wow-delay="0.7s">
-                            <div class="adv-card h-init"><img class="icon" src="./img/adv-4.svg" alt>
-                                <div class="text-block">
-                                    <p class="title">ДОСТУПНОСТЬ НА ВСЕХ УСТРОЙСТВАХ</p>
-                                    <p class="text">Неограниченное количество участников голосования</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 create-order wow animated zoomIn" data-wow-delay="0.9s">
-                            <div class="create-card h-init">
-                                <p class="title">СОЗДАТЬ ГОЛОСОВАНИЕ</p>
-                                <p class="text">Подробная информация о запуске и настройке системы голосований</p>
-                                <button class="btn-create js-popup-show">Создать голосование</button>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-12 wow animated zoomIn" data-wow-delay="1.1s">
-                            <div class="adv-card h-init"><img class="icon" src="./img/adv-5.svg" alt>
-                                <div class="text-block">
-                                    <p class="title">МАСШТАБИРОВАНИЕ</p>
-                                    <p class="text">
-                                        Платформа способна обрабатывать неограниченное число избирателей
-
-                                    </p>
+        <section class="slider">
+            <div class="slider-wrapper js-slider-header">
+                <div class="slide slide-1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-7 offset-xl-1 col-lg-9 offset-lg-1">
+                                <div class="slide-content"><img class="line" src="./img/line.png" alt>
+                                    <div class="text">
+                                        <h1>Проходная кабина</h1>
+                                        <p class="desc">Выход есть всегда, а а данном случае их целых три! Мы готовы предложить уникальные решения</p><a class="btn-more" href>Узнать больше</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="platform" id="blockchain">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-9">
-                            <h2>Архитектура платформы</h2>
-                            <p class="text"><span>glass</span> - универсальная платформа голосования на основе собственной блокчейн технологии с возможностью гибкой настройки под каждого клиента. Платформа GLASS позволяет запустить собственное голосование за несколько шагов.</p>
-                        </div>
-                    </div>
-                    <div class="img wow animated fadeIn"><img class="desktop" src="./img/platform.png" alt><img class="mobile" src="./img/platform-mobile.png" alt></div>
-                </div>
-            </section>
-        </div>
-        <section class="features" id="tech">
-            <div class="container">
-                <h2>CrossChain. Особенности собственного блокчейна</h2>
-                <div class="row">
-                    <div class="col-xl-4 js-card-wrapper wow animated zoomIn" data-wow-delay="0.1s">
-                        <div class="feature-card"><img src="./img/check.png" alt>
-                            <p class="text">Высокая производительность</p>
-                            <div class="feature-card-show js-feature-card-show">
-                                <div class="icon"><img src="./img/check.png" alt>
-                                    <p class="main">Используемые консенсусы в CrossChain:</p>
-                                </div>
-                                <div class="text-block">
-                                    <p class="title">Proof of Stake, Proof of Authority.</p>
-                                    <p class="common-text">Текущий показатель производительности CrossChain - 16’000 tps (transaction per second), после внедрения дополнительной функциональности ожидается 50’000 tps</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 js-card-wrapper wow animated zoomIn" data-wow-delay="0.3s">
-                        <div class="feature-card"><img src="./img/check.png" alt>
-                            <p class="text">Наличие Software Development Toolkit</p>
-                            <div class="feature-card-show js-feature-card-show">
-                                <div class="icon"><img src="./img/check.png" alt>
-                                    <p class="main">Используемые консенсусы в CrossChain:</p>
-                                </div>
-                                <div class="text-block">
-                                    <p class="title">SDK</p>
-                                    <p class="common-text">
-                                        набор средств разработки, позволяющий сторонним разработчикам взаимодействовать
-                                        с блокчейном без глубокого погружения в его особенности, а также разрабатывать
-                                        собственные бизнес-продукты на его основе
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 js-card-wrapper wow animated zoomIn" data-wow-delay="0.5s">
-                        <div class="feature-card"><img src="./img/check.png" alt>
-                            <p class="text">Наличие миграций</p>
-                            <div class="feature-card-show js-feature-card-show">
-                                <div class="icon"><img src="./img/check.png" alt>
-                                    <p class="main">Используемые консенсусы в CrossChain:</p>
-                                </div>
-                                <div class="text-block">
-                                    <p class="title">Миграции</p>
-                                    <p class="common-text">это возможность добавления новой функционости без остановки работы блокчейна</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 js-card-wrapper wow animated zoomIn" data-wow-delay="0.7s">
-                        <div class="feature-card"><img src="./img/check.png" alt>
-                            <p class="text">Децентрализованный обмен токенов</p>
-                            <div class="feature-card-show js-feature-card-show">
-                                <div class="icon"><img src="./img/check.png" alt>
-                                    <p class="main">Используемые консенсусы в CrossChain:</p>
-                                </div>
-                                <div class="text-block">
-                                    <p class="title">CrossChain</p>
-                                    <p class="common-text">
-                                        позволяет совершать децентрализованный обмен токенов между разными блокчейнами
-                                        напрямую, без посредников
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 js-card-wrapper wow animated zoomIn" data-wow-delay="0.9s">
-                        <div class="feature-card"><img src="./img/check.png" alt>
-                            <p class="text">Simplified Payment Verification</p>
-                            <div class="feature-card-show js-feature-card-show">
-                                <div class="icon"><img src="./img/check.png" alt>
-                                    <p class="main">Используемые консенсусы в CrossChain:</p>
-                                </div>
-                                <div class="text-block">
-                                    <p class="title">Simplified Payment Verification</p>
-                                    <p class="common-text">это возможность быстрой верификации операций без загрузки всего блокчейна</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 js-card-wrapper wow animated zoomIn" data-wow-delay="1.1s">
-                        <div class="feature-card"><img src="./img/check.png" alt>
-                            <p class="text">Масштабируемость / Шардинг</p>
-                            <div class="feature-card-show js-feature-card-show">
-                                <div class="icon"><img src="./img/check.png" alt>
-                                    <p class="main">Используемые консенсусы в CrossChain:</p>
-                                </div>
-                                <div class="text-block">
-                                    <p class="title">Шардинг</p>
-                                    <p class="common-text">
-                                        решает проблему масштабирования приложений, позволяя быстро и эффективно
-                                        справляться с нагрузкой и давать ответ на запросы приложения - повышает
-                                        отказоустойчивость системы
-                                    </p>
+                <div class="slide slide-1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-7 offset-xl-1 col-lg-9 offset-lg-1">
+                                <div class="slide-content"><img class="line" src="./img/line.png" alt>
+                                    <div class="text">
+                                        <h1>Проходная кабина</h1>
+                                        <p class="desc">Выход есть всегда, а а данном случае их целых три! Мы готовы предложить уникальные решения</p><a class="btn-more" href>Узнать больше</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="bottom">
-                    <button class="more js-popup-show">Узнать больше</button>
-                    <p class="text">
-                        Успешно пройден аудит лаборатории информационной безопасности при факультете ВМК МГУ им. М.В.Ломоносова
-
-                    </p>
-                </div>
+            </div>
+            <div class="slider-btns">
+                <button class="btn-prev js-btn-prev"><img src="./img/slider-arrow.png" alt></button>
+                <button class="btn-next js-btn-next"><img src="./img/slider-arrow.png" alt></button>
             </div>
         </section>
-        <div class="wrapper-for-bg">
-            <section class="profits" id="profits"><img class="bg-elem-3" src="./img/bg-elem-3.png" alt><img class="bg-elem-4" src="./img/bg-elem-4.png" alt>
-                <div class="container">
-                    <h2>Glass. Выгоды</h2>
-                    <div class="row">
-                        <div class="col-xl-4 no-right-pad col-lg-4">
-                            <div class="nav-tabs">
-                                <div class="nav-tab active js-nav-tab" data-tab="js-item-1">
-                                    <div class="icon"><img src="./img/profit-nav-1.svg" alt></div><span class="title">Для государства</span><span class="title-mobile">Государству</span>
-                                </div>
-                                <div class="nav-tab js-nav-tab" data-tab="js-item-2">
-                                    <div class="icon"><img src="./img/profit-nav-2.svg" alt></div><span class="title">Для бизнеса и НКО</span><span class="title-mobile">Бизнесу и НКО</span>
-                                </div>
-                                <div class="nav-tab js-nav-tab" data-tab="js-item-3">
-                                    <div class="icon"><img src="./img/profit-nav-3.svg" alt></div><span class="title">Для избирателей</span><span class="title-mobile">Избирателям</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-8 no-left-pad col-lg-8">
-                            <div class="nav-content js-nav-content">
-                                <div class="item active js-item-1 js-item">
-                                    <div class="item-top">
-                                        <div class="list">
-                                            <div class="list-item"><img src="./img/profit-min-1.svg" alt><span>Увеличение явки</span></div>
-                                            <div class="list-item"><img src="./img/profit-min-2.svg" alt><span>Интерес со стороны молодежи</span></div>
-                                            <div class="list-item"><img src="./img/profit-min-3.svg" alt><span>Снижение расходов на организацию</span></div>
-                                        </div>
-                                        <div class="list">
-                                            <div class="list-item"><img src="./img/profit-min-4.svg" alt><span>Анонимность избирателей</span></div>
-                                            <div class="list-item"><img src="./img/profit-min-5.svg" alt><span>Нет дублирования голосови</span></div>
-                                            <div class="list-item"><img src="./img/profit-min-6.svg" alt><span>Подсчет голосов за несколько секунд</span></div>
-                                            <div class="list-item"><img src="./img/profit-min-7.svg" alt><span>Полная защита личности избирателя от подделки</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="item-bottom">
-                                        <div class="text">
-                                            <p><span class="logo"> <img src="./img/logo.png" alt></span><span>- универсальная платформа голосования на основе собственной блокчейн технологии с возможностью гибкой настройки под каждого клиента. </span></p>
-                                            <p>Платформа GLASS позволяет запустить собственное голосование за несколько шагов.</p>
-                                            <p>Хотите узнать как? <a class="put js-popup-show" href="#" title="title">Оставьте заявку</a> и наши специалисты свяжутся с вами для консультации.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item js-item-2 js-item">
-                                    <div class="item-top">
-                                        <div class="list">
-                                            <div class="list-item"><img src="./img/profit-min-1.svg" alt><span>Сокращение расходов на организацию</span></div>
-                                            <div class="list-item"><img src="./img/profit-min-2.svg" alt><span>Возможность организовать разные типы голосований</span></div>
-                                            <div class="list-item"><img src="./img/profit-min-3.svg" alt><span>Снижение времени организации голосования</span></div>
-                                            <div class="list-item"><img src="./img/profit-min-4.svg" alt><span>Повышение удобства участия для избирателей</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="item-bottom">
-                                        <div class="text">
-                                            <p><span class="logo"> <img src="./img/logo.png" alt></span><span>- универсальная платформа голосования на основе собственной блокчейн технологии с возможностью гибкой настройки под каждого клиента. </span></p>
-                                            <p>Платформа GLASS позволяет запустить собственное голосование за несколько шагов.</p>
-                                            <p>Хотите узнать как? <a class="put js-popup-show" href="#" title="title">Оставьте заявку</a> и наши специалисты свяжутся с вами для консультации.
-
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item js-item-3 js-item">
-                                    <div class="item-top">
-                                        <div class="list">
-                                            <div class="list-item"><img src="./img/profit-min-1.svg" alt><span>Удобство участия в голосовании</span></div>
-                                            <div class="list-item"><img src="./img/profit-min-2.svg" alt><span>Сокращение времени на голосование</span></div>
-                                            <div class="list-item"><img src="./img/profit-min-3.svg" alt><span>Гарантированная анонимность выборов</span></div>
-                                            <div class="list-item"><img src="./img/profit-min-4.svg" alt><span>Гарантированная прозрачность референдумов</span></div>
-                                            <div class="list-item"><img src="./img/profit-min-5.svg" alt><span>Результаты референдумов в режиме реального времени</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="item-bottom">
-                                        <div class="text">
-                                            <p><span class="logo"> <img src="./img/logo.png" alt></span><span>- универсальная платформа голосования на основе собственной блокчейн технологии с возможностью гибкой настройки под каждого клиента. </span></p>
-                                            <p>Платформа GLASS позволяет запустить собственное голосование за несколько шагов.</p>
-                                            <p>Хотите узнать как? <a class="put js-popup-show" href="#" title="title">Оставьте заявку</a> и наши специалисты свяжутся с вами для консультации.
-
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="develop" id="dev">
-                <div class="container">
-                    <h2>GLASS. Технологическое развитие</h2>
-                    <p class="desc">Наша техническая команда постоянно совершенствует платформу GLASS и регулярно выпускает обновления системы.</p>
-                    <div class="profits-wrapper">
-                        <div class="profits-line-1">
-                            <div class="point-wrapper">
-                                <div class="point">
-                                    <div class="icon"><img src="./img/profit-1.svg" alt></div><span class="line"></span><span class="circle"><span class="mini-circle"></span></span>
-                                </div>
-                                <div class="text-block">
-                                    <p class="title">05.09.19</p>
-                                    <p class="text">Интеграция с Госуслугами</p>
-                                </div>
-                            </div>
-                            <div class="point-wrapper mobile-only">
-                                <div class="point">
-                                    <div class="icon"><img src="./img/profit-4.svg" alt></div><span class="line"></span><span class="circle"><span class="mini-circle"></span></span>
-                                </div>
-                                <div class="text-block w-346">
-                                    <p class="title">15.09.19</p>
-                                    <p class="text">Реализация тайного голосования: анонимность избирателей + отсутствие дублирования голосов</p>
-                                </div>
-                            </div>
-                            <div class="point-wrapper">
-                                <div class="point">
-                                    <div class="icon"><img src="./img/profit-2.svg" alt></div><span class="line"></span><span class="circle"><span class="mini-circle"></span></span>
-                                </div>
-                                <div class="text-block w-121">
-                                    <p class="title">25.09.19</p>
-                                    <p class="text">Криптография по ГОСТу РФ</p>
-                                </div>
-                            </div>
-                            <div class="point-wrapper reverse">
-                                <div class="point">
-                                    <div class="icon"><img src="./img/profit-3.svg" alt></div><span class="line"></span><span class="circle"><span class="mini-circle"></span></span>
-                                </div>
-                                <div class="text-block w-258">
-                                    <p class="title">05.10.19</p>
-                                    <p class="text">Размещение исходного кода Блокчейна в open source</p>
-                                </div>
-                            </div>
-                            <div class="point-wrapper mobile-only">
-                                <div class="point">
-                                    <div class="icon"><img src="./img/profit-5.svg" alt></div><span class="line"></span><span class="circle"><span class="mini-circle"></span></span>
-                                </div>
-                                <div class="text-block w-211">
-                                    <p class="title">15.10.19</p>
-                                    <p class="text">Снижение времени на разворачивание системы голосования до пары часов</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="profits-line"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
-                        <div class="profits-line-1 profits-line-2">
-                            <div class="point-wrapper move">
-                                <div class="point">
-                                    <div class="icon"><img src="./img/profit-4.svg" alt></div><span class="line"></span><span class="circle"><span class="mini-circle"></span></span>
-                                </div>
-                                <div class="text-block w-346">
-                                    <p class="title">15.09.19</p>
-                                    <p class="text">Реализация тайного голосования: анонимность избирателей + отсутствие дублирования голосов</p>
-                                </div>
-                            </div>
-                            <div class="point-wrapper">
-                                <div class="point">
-                                    <div class="icon"><img src="./img/profit-5.svg" alt></div><span class="line"></span><span class="circle"><span class="mini-circle"></span></span>
-                                </div>
-                                <div class="text-block w-211">
-                                    <p class="title">15.10.19</p>
-                                    <p class="text">Снижение времени на разворачивание системы голосования до пары часов</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <section class="contacts" id="contacts">
+        <section class="standarts"><img class="bg-elem-1" src="./img/bg-1.png" alt><img class="bg-elem-2" src="./img/bg-2.png" alt>
             <div class="container">
-                <h2>Успешный запуск платформы GLASS</h2>
-                <div class="row">
-                    <div class="col-xl-10 offset-xl-1">
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="row">
-                                        <div class="col-xl-5">
-                                            <div class="left-side">
-                                                <div class="text-wrapper">
-                                                    <p class="title">Внутрифракционные голосования в «Партии Роста»</p><img class="desktop" src="./img/slide-1.png" alt>
-                                                    <div class="text">
-                                                        <p>Участников <span>1600 </span></p>
-                                                        <p>Длительность <span>1 неделя</span></p>
-                                                    </div>
-                                                </div><img class="mobile" src="./img/slide-1-mob.png" alt>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-7">
-                                            <div class="right-panel">
-                                                <div class="part-1">
-                                                    <div class="text">
-                                                        <p><span class="emp">90%</span><span>сэкономлено времени команды организаторов</span></p>
-                                                        <p><span class="emp">25%</span><span>увеличение явки</span></p>
-                                                        <p><span class="emp">95%</span><span>уровень доверия к результатам голосования</span></p>
-                                                    </div><img src="./img/slide-1-2.png" alt>
-                                                </div>
-                                                <div class="part-2">
-                                                    <div class="text">
-                                                        <p class="title">Отзыв Партии Роста</p>
-                                                        <p class="common-text">Блокчейн - это фундаментальное изменение отношений между государством и обществом, людей между собой. Это жизнь без вранья. Для принятия внутрипартийных решений через голосование с декабря 2018 года мы используем блокчейн-платформу GLASS. Планируем и дальше развиваться в этом направлении со специалистами из GLASS.</p>
-                                                        <p class="credit">Председатель «Партии Роста» Б.Ю Титов</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="row">
-                                        <div class="col-xl-5">
-                                            <div class="left-side">
-                                                <div class="text-wrapper">
-                                                    <p class="title">Внутрифракционные голосования в «Партии Роста»</p><img class="desktop" src="./img/slide-1.png" alt>
-                                                    <div class="text">
-                                                        <p>Участников <span>1600</span></p>
-                                                        <p>Длительность <span>1 неделя</span></p>
-                                                    </div>
-                                                </div><img class="mobile" src="./img/slide-1-mob.png" alt>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-7">
-                                            <div class="right-panel">
-                                                <div class="part-1">
-                                                    <div class="text">
-                                                        <p><span class="emp">90%</span><span>сэкономлено времени команды организаторов</span></p>
-                                                        <p><span class="emp">25%</span><span>увеличение явки</span></p>
-                                                        <p><span class="emp">95%</span><span>уровень доверия к результатам голосования</span></p>
-                                                    </div><img src="./img/slide-1-2.png" alt>
-                                                </div>
-                                                <div class="part-2">
-                                                    <div class="text">
-                                                        <p class="title">Отзыв Партии Роста</p>
-                                                        <p class="common-text">Блокчейн - это фундаментальное изменение отношений между государством и обществом, людей между собой. Это жизнь без вранья. Для принятия внутрипартийных решений через голосование с декабря 2018 года мы используем блокчейн-платформу GLASS. Планируем и дальше развиваться в этом направлении со специалистами из GLASS.</p>
-                                                        <p class="credit">Председатель «Партии Роста» Б.Ю Титов</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="row">
-                                        <div class="col-xl-5">
-                                            <div class="left-side">
-                                                <div class="text-wrapper">
-                                                    <p class="title">Внутрифракционные голосования в «Партии Роста»</p><img class="desktop" src="./img/slide-1.png" alt>
-                                                    <div class="text">
-                                                        <p>Участников <span>1600</span></p>
-                                                        <p>Длительность <span>1 неделя</span></p>
-                                                    </div>
-                                                </div><img class="mobile" src="./img/slide-1-mob.png" alt>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-7">
-                                            <div class="right-panel">
-                                                <div class="part-1">
-                                                    <div class="text">
-                                                        <p><span class="emp">90%</span><span>сэкономлено времени команды организаторов</span></p>
-                                                        <p><span class="emp">25%</span><span>увеличение явки</span></p>
-                                                        <p><span class="emp">95%</span><span>уровень доверия к результатам голосования</span></p>
-                                                    </div><img src="./img/slide-1-2.png" alt>
-                                                </div>
-                                                <div class="part-2">
-                                                    <div class="text">
-                                                        <p class="title">Отзыв Партии Роста</p>
-                                                        <p class="common-text">Блокчейн - это фундаментальное изменение отношений между государством и обществом, людей между собой. Это жизнь без вранья. Для принятия внутрипартийных решений через голосование с декабря 2018 года мы используем блокчейн-платформу GLASS. Планируем и дальше развиваться в этом направлении со специалистами из GLASS.</p>
-                                                        <p class="credit">Председатель «Партии Роста» Б.Ю Титов</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <h2>СТАНДАРТЫ КАЧЕСТВА</h2>
+                <div class="standart">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-5 col-sm-9">
+                            <div class="img orange border-left"><img src="./img/standart-1.jpg" alt></div>
+                        </div>
+                        <div class="col-xl-4 col-lg-5 col-md-7 col-sm-12">
+                            <p class="text">Мы ценим время наших клиентов и делаем все, чтобы сотрудничество с нами было максимально удобным. Мы компания полного цикла с профессиональным подходом к организации всего процесса установки лифта.</p>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xl-10 offset-xl-1">
-                        <div class="slider-bottom">
-                            <div class="swiper-scrollbar"></div>
-                            <div class="js-swiper-pagination"></div>
-                            <div class="btns">
-                                <div class="js-swiper-button-prev slider-btn"><img src="./img/next.png" alt></div>
-                                <div class="js-swiper-button-next slider-btn"><img src="./img/next.png" alt></div>
+                <div class="standart">
+                    <div class="row">
+                        <div class="col-xl-4 offset-xl-4 col-lg-5 offset-lg-3 col-md-7 offset-md-0 order">
+                            <p class="text">С 2004 года на территории Санкт-Петербурга и СЗФО мы успешно реализовали множество проектов, от самых простых до элитных. Помогаем сделать дома совершеннее и комфортнее. Устанавливая лифты – делаем любой этаж доступным!</p>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-5 col-sm-9">
+                            <div class="img border-right"><img src="./img/standart-2.jpg" alt></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="standart-wrapper">
+                <div class="container standart-container">
+                    <div class="standart">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-5 col-sm-9">
+                                <div class="img orange border-left"><img src="./img/standart-3.jpg" alt></div>
+                            </div>
+                            <div class="col-xl-4 col-lg-5 col-md-7">
+                                <p class="text">
+                                    Сотрудники компании имеют большой опыт работы с объектами любой степени сложности и готовы начать работу на любой стадии установки лифта, начиная с предпроектных работ и экспертизы и заканчивая вводом в эксплуатацию и сдачу надзорным органам.
+
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <footer class="footer">
-            <div class="container">
-                <div class="content">
-                    <div class="text"><a class="logo" href><img src="./img/logo-white.png" alt></a>
-                        <p>GLASS — глобальная платформа на основе собственного блокчейна с возможностью гибкой настройки параметров голосования под любые требования</p>
-                    </div>
-                    <div class="menu">
-                        <p class="title">Меню</p>
-                        <div class="links">
-                            <ul>
-                                <li><a class="js-link" href="#plat">О платформе</a></li>
-                                <li><a class="js-link" href="#blockchain">Технология</a></li>
-                                <li><a class="js-link" href="#tech">Блокчейн</a></li>
-                            </ul>
-                            <ul>
-                                <li><a class="js-link" href="#profits">Выгоды</a></li>
-                                <li><a class="js-link" href="#dev">Развитие</a></li>
-                                <li><a class="js-popup-show" href>Связаться с нами</a></li>
-                            </ul>
-                        </div>
-                    </div><a class="create js-popup-show" href>Создать голосование</a>
-                </div>
-            </div>
-        </footer>
+        <section class="feedback">
+            <div class="container"></div>
+        </section>
     </body>
-    <div class="popup-wrapper js-popup">
-        <div class="popup-body">
-            <form class="popup-form" action><img class="close-popup js-close-popup" src="./img/close.svg" alt><img class="close-popup-big js-close-popup" src="./img/close-big.svg" alt>
-                <p class="title">Свяжитесь с нами</p>
-                <input class="input" name type="text" placeholder="Имя*">
-                <input class="input" name type="text" placeholder="Электронный адрес*">
-                <input class="input" name type="text" placeholder="Телефон">
-                <textarea class="input textarea" name placeholder="Текст сообщения*"></textarea>
-                <button class="create">Отправить</button>
-            </form>
-        </div>
-    </div>
     <script src="./libs/js/vendor.min.js"></script>
     <script src="./js/index.js"></script>
 </html>
