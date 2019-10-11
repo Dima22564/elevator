@@ -1,0 +1,60 @@
+.footer
+  display: flex
+  align-items: stretch
+  +lg
+    flex-direction: column
+    margin-top: -142px
+  .map
+    width: 50%
+    max-height: 395px
+    overflow: hidden
+    +lg
+      width: 100%
+      max-height: 295px
+      
+    img
+      width: 100%
+      height: 100%
+      +lg-one(height, 133%)
+  .contacts
+    width: 50%
+    background: $blue
+    padding: 39px 31px 44px 31px
+    +lg
+      display: flex
+      width: 100%
+      justify-content: center
+    +md-one(padding, 40px 15px 40px 15px)
+    .text
+      max-width: 585px
+      color: $white
+      h3
+        margin-bottom: 24px
+      p
+        line-height: 24px
+        font-size: 16px
+        margin-bottom: 26px
+    .tels
+      display: flex
+      flex-wrap: wrap
+      .wrap
+        margin-bottom: 16px
+        display: flex
+        width: 100%
+        +md-one(justify-content, space-between)
+      a
+        color: $white
+        font-weight: 600
+        font-size: 20px
+        line-height: 24px
+        +md-one(font-size, 18px)
+        &:not(:last-child)
+          margin-right: 57px
+          +md-one(margin-right, 0)
+    .mail
+      color: $white
+      font-weight: 600
+      font-size: 20px
+      line-height: 24px
+      margin-top: 38px
+      display: inline-flex

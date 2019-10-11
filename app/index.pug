@@ -106,11 +106,50 @@ html(lang="en")
       //-  
 
             
-    //- Feedback  adapted = 
+    //- Feedback  adapted = true
     section.feedback
       .container
-        
+        .row.align-items-end
+          .col-xl-8.offset-xl-2.col-lg-10.offset-lg-1
+            p.text.
+              Приглашаем к сотрудничеству проектные организации, архитектурные бюро и дизайн студии.Сотрудничать с нами надежно, удобно и выгодно.
+            .inputs
+              input(type="text", placeholder="Имя").input
+              input(type="text", placeholder="E-mail").input
+              input(type="text", placeholder="Телефон").input
+            textarea(name="", placeholder="Сообщение").input
+            .checkbox
+              input#check(type="checkbox") 
+              label(for="check") #[span Принимаю пользовательское] #[a(href="#") соглашение о конфиденциальности]
+            .btn
+              button(type="submit") Отпавить
+          .col-xl-1.offset-xl-1.col-lg-1.offset-lg-0.offset-md-11.col-sm-2.offset-sm-10.col-3.offset-9
+            .right-btns
+              button.mess
+                img(src="./img/mess.png", alt="")
+              button.call
+                img(src="./img/phone-white.png", alt="")
 
+        
+    //- Footer  adapted = true
+    footer.footer
+      .map
+        img(src="./img/map.jpg", alt="")
+      .contacts
+        .text
+          h3 КОНТАКТЫ
+          p.
+            Работаем с 2004г. #[br]
+            Официальный дистрибьютор IGV в Санкт-Петербурге. #[br]
+            Поставка, монтаж, наладка и техническое обслуживание лифтов и эскалаторов.191187, г.Санкт-Петербург, Гагаринская ул., д.6
+          .tels
+            .wrap
+              a(href="tel:+") 8 (812) 628-01-08
+              a(href="tel:+") 8 (812) 628-01-08
+            .wrap
+              a(href="tel:+") 8 (812) 628-01-08
+              a(href="tel:+") 8 (812) 628-01-08
+          a(href="#", title="title").mail baltlift@inbox.ru
 
 
   script(src="./libs/js/vendor.min.js")
