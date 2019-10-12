@@ -10,6 +10,7 @@
         <title>БалтЛифт</title>
     </head>
     <body>
+        <div class="main-wrapper js-main-wrapper"></div>
         <header class="header">
             <div class="header-top">
                 <div class="container">
@@ -19,7 +20,13 @@
             <nav class="header-nav">
                 <div class="container">
                     <div class="nav-links-wrapper js-burger-menu">
-                        <div class="nav-links"><a class="drop-link" href><span>Лифтовое оборудование</span><img src="./img/arrow-down.svg" alt></a><a href="">Парковочные системы</a><a href="">Портфолио</a><a href="">Инвестиции</a><a href="">О компании</a><a href="">Контакты</a><a class="tel" href="tel:+7 (812) 719-80-98"><img src="./img/phone-white.png" alt><span>+7 (812) 719-80-98</span></a></div>
+                        <div class="nav-links">
+                            <div class="drop-link js-drop-link"><span>Лифтовое оборудование</span><img src="./img/arrow-down.svg" alt>
+                                <div class="drop-down-links-wrapper js-drop-down-links">
+                                    <div class="drop-down-links"><a class="drop-down-link" href="#">drop-item</a><a class="drop-down-link" href="#">drop-item</a><a class="drop-down-link" href="#">drop-item</a><a class="drop-down-link" href="#">drop-item</a><a class="drop-down-link" href="#">drop-item</a></div>
+                                </div>
+                            </div><a href="">Парковочные системы</a><a href="">Портфолио</a><a href="">Инвестиции</a><a href="">О компании</a><a href="">Контакты</a><a class="tel" href="tel:+7 (812) 719-80-98"><img src="./img/phone-white.png" alt><span>+7 (812) 719-80-98</span></a>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -33,7 +40,7 @@
                                 <div class="slide-content"><img class="line" src="./img/line.png" alt>
                                     <div class="text">
                                         <h1>Проходная кабина</h1>
-                                        <p class="desc">Выход есть всегда, а а данном случае их целых три! Мы готовы предложить уникальные решения</p><a class="btn-more" href>Узнать больше</a>
+                                        <p class="desc">Выход есть всегда, а а данном случае их целых три! Мы готовы предложить уникальные решения</p><a class="btn-more js-btn-more" href>Узнать больше</a>
                                     </div>
                                 </div>
                             </div>
@@ -47,7 +54,7 @@
                                 <div class="slide-content"><img class="line" src="./img/line.png" alt>
                                     <div class="text">
                                         <h1>Проходная кабина</h1>
-                                        <p class="desc">Выход есть всегда, а а данном случае их целых три! Мы готовы предложить уникальные решения</p><a class="btn-more" href>Узнать больше</a>
+                                        <p class="desc">Выход есть всегда, а а данном случае их целых три! Мы готовы предложить уникальные решения</p><a class="btn-more js-btn-more" href>Узнать больше</a>
                                     </div>
                                 </div>
                             </div>
@@ -58,6 +65,40 @@
             <div class="slider-btns">
                 <button class="btn-prev js-btn-prev"><img src="./img/slider-arrow.png" alt></button>
                 <button class="btn-next js-btn-next"><img src="./img/slider-arrow.png" alt></button>
+            </div>
+        </section>
+        <section class="offer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 offset-xl-2">
+                        <div class="text">
+                            <h2>МЫ ПРЕДЛАГАЕМ</h2>
+                            <p class="desc">Выход есть всегда, а а данном случае их целых три! Мы готовы предложить уникальные решения</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-slider js-second-slider">
+                    <div class="slide"><img src="./img/offer-1.jpg" alt>
+                        <p class="title">Предпроектные работы и проектирование</p>
+                        <p class="desc">Выход есть всегда, а а данном случае их целых три! Мы готовы предложить уникальные решения</p>
+                    </div>
+                    <div class="slide"><img src="./img/offer-2.jpg" alt>
+                        <p class="title">Предпроектные работы и проектирование</p>
+                        <p class="desc">Выход есть всегда, а а данном случае их целых три! Мы готовы предложить уникальные решения</p>
+                    </div>
+                    <div class="slide"><img src="./img/offer-3.jpg" alt>
+                        <p class="title">Предпроектные работы и проектирование</p>
+                        <p class="desc">Выход есть всегда, а а данном случае их целых три! Мы готовы предложить уникальные решения</p>
+                    </div>
+                    <div class="slide"><img src="./img/offer-1.jpg" alt>
+                        <p class="title">Предпроектные работы и проектирование</p>
+                        <p class="desc">Выход есть всегда, а а данном случае их целых три! Мы готовы предложить уникальные решения</p>
+                    </div>
+                </div>
+                <div class="second-slider-btns">
+                    <button class="second-slider-prev-btn"><img src="./img/white-btn.png" alt></button>
+                    <button class="second-slider-next-btn"><img src="./img/white-btn.png" alt></button>
+                </div>
             </div>
         </section>
         <section class="standarts"><img class="bg-elem-1" src="./img/bg-1.png" alt><img class="bg-elem-2" src="./img/bg-2.png" alt>
@@ -106,20 +147,22 @@
             <div class="container">
                 <div class="row align-items-end">
                     <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
-                        <p class="text">Приглашаем к сотрудничеству проектные организации, архитектурные бюро и дизайн студии.Сотрудничать с нами надежно, удобно и выгодно.</p>
-                        <div class="inputs">
-                            <input class="input" type="text" placeholder="Имя">
-                            <input class="input" type="text" placeholder="E-mail">
-                            <input class="input" type="text" placeholder="Телефон">
-                        </div>
-                        <textarea class="input" name placeholder="Сообщение"></textarea>
-                        <div class="checkbox">
-                            <input id="check" type="checkbox">
-                            <label for="check"><span>Принимаю пользовательское</span> <a href="#">соглашение о конфиденциальности</a></label>
-                        </div>
-                        <div class="btn">
-                            <button type="submit">Отпавить</button>
-                        </div>
+                        <form action="">
+                            <p class="text">Приглашаем к сотрудничеству проектные организации, архитектурные бюро и дизайн студии.Сотрудничать с нами надежно, удобно и выгодно.</p>
+                            <div class="inputs">
+                                <input class="input" type="text" placeholder="Имя">
+                                <input class="input" type="text" placeholder="E-mail">
+                                <input class="input" type="text" placeholder="Телефон">
+                            </div>
+                            <textarea class="input" name placeholder="Сообщение"></textarea>
+                            <div class="checkbox">
+                                <input id="check" type="checkbox">
+                                <label for="check"><span>Принимаю пользовательское</span> <a href="#">соглашение о конфиденциальности</a></label>
+                            </div>
+                            <div class="btn">
+                                <button type="submit">Отпавить</button>
+                            </div>
+                        </form>
                     </div>
                     <div class="col-xl-1 offset-xl-1 col-lg-1 offset-lg-0 offset-md-11 col-sm-2 offset-sm-10 col-3 offset-9">
                         <div class="right-btns">
@@ -146,6 +189,23 @@
                 </div>
             </div>
         </footer>
+        <div class="popup-wrapper js-popup">
+            <div class="popup-body">
+                <form class="popup-form" action><span class="close js-close"><img src="./img/close.png" alt></span>
+                    <p class="title">Заказать звонок менеджера</p>
+                    <p class="text">Закажите обратный звонок и наш менеджер перезвонит вам в течение <span>12 минут</span> или мы предоставим скидку 10%!</p>
+                    <input class="input" type="text" placeholder="Введите ваш номер телефона">
+                    <p class="placeholder">25 знаков доступно для ввода</p>
+                    <div class="bottom">
+                        <div class="checkbox">
+                            <input id="check2" type="checkbox">
+                            <label for="check2"><a href="#">Соглашение концединциальности</a></label>
+                        </div>
+                        <button>Отпавить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </body>
     <script src="./libs/js/vendor.min.js"></script>
     <script src="./js/index.js"></script>

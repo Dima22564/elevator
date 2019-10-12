@@ -1,0 +1,106 @@
+.offer
+  background: $white
+  padding: 126px 0 106px
+  +md-one(padding, 72px 0)
+  .text
+    text-align: center
+    .desc
+      font-size: 24px
+      line-height: 26px
+      font-weight: 600
+      margin: 23px 0 40px
+      +sm
+        font-size: 20px
+        line-height: 26px
+        font-weight: bold
+  .second-slider-btns
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    margin-top: 32px
+    button
+      width: 40px
+      height: 40px
+      background: $orange
+      border: none
+      display: flex
+      align-items: center
+      justify-content: center
+      cursor: pointer
+      transition: all 0.3s
+      &:hover
+        background: rgba(245, 140, 30, 0.8)
+      &:not(:last-child)
+        margin-right: 24px
+      &.second-slider-prev-btn
+        img
+          transform: rotate(180deg)
+  .second-slider
+    .slick-list
+      padding-left: 64px !important
+      +lg-one(padding-left, 0 !important)
+    .slide
+      color: $white
+      padding: 225px 42px 32px 32px
+      border: 5px solid $orange
+      position: relative
+      max-width: 533px
+      transition: all 0.3s
+      +sm-one(padding, 98px 70px 16px 16px)
+      &.slick-center
+        transform: scale(1) !important
+        // margin-left: -102px
+        // margin-right: -102px
+        max-width: 533px !important
+        z-index: 55
+        &::before
+          background: rgba(0, 0, 0, 0.49) !important
+      &.slick-slide
+        transform: scale(0.75)
+        max-width: 527px
+        +lg
+          transform: scale(1)
+          max-width: 100% !important
+          &::before
+            background: rgba(0, 0, 0, 0.49) !important
+
+        &:first-child
+          // margin-left: 27px
+        &:not(:last-child)
+          margin-right: -151px
+          +lg-one(margin-right, 0)
+        
+      &::before
+        content: ''
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+        background: rgba(255, 255, 255, 0.3)
+        z-index: 1
+      .title
+        font-weight: bold
+        font-size: 24px
+        line-height: 24px
+        position: relative
+        z-index: 5
+        +sm
+          font-size: 18px
+          line-height: 18px
+      .desc
+        font-size: 18px
+        line-height: 20px
+        margin-top: 8px
+        position: relative
+        z-index: 5 
+        +sm
+          font-size: 14px
+          line-height: 16px
+      img
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+

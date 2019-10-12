@@ -1,4 +1,18 @@
+.main-wrapper
+  display: none
+  width: 100%
+  height: 100%
+  position: fixed
+  top: 0
+  left: 
+  background: transparent
+  z-index: 999
+  // +lg-one(display, block)
+  &.active
+    display: block
 .header
+  position: relative
+  z-index: 9999999999
   .tel
     display: flex
     align-items: center
@@ -30,6 +44,8 @@
       background-position-x: initial
       background-position-y: initial
     .nav-links-wrapper
+      z-index: 9999
+      display: block
       +lg
         display: none
         position: absolute
@@ -61,11 +77,49 @@
         display: flex
         align-items: center
         transition: all 0.3s
+        color: $white
+        cursor: pointer
+        margin-right: 26px
+        position: relative
+        +lg
+          width: 100%
+          flex-wrap: wrap
+          margin: 0 0 6px 0
+        &:hover
+          background: rgba(15, 65, 95, 0.7)
+          span
+            color: rgba(255, 255, 255, 0.6)
+          img
+            opacity: 0.6
+        span, img
+          transition: all 0.3s
         &.active
           img
             transform: rotate(180deg)
-        &:hover
-          opacity: 0.6
+        .drop-down-links-wrapper
+          position: absolute
+          display: none
+          left: 0
+          width: 100%
+          bottom: 0
+          background: $blue
+          padding: 16px 0
+          transform: translateY(107%)
+          z-index: 5556
+          +lg
+            position: initial
+            transform: translateY(0)
+            width: 100%
+        .drop-down-links
+          display: flex
+          flex-direction: column
+          align-items: flex-start
+          .drop-down-link
+            padding: 8px 16px
+            width: 100%
+            &:hover
+              background: rgba(255, 255, 255, 0.06)
+              
       a
         color: $white
         transition: all 0.3s
@@ -74,3 +128,4 @@
           color: $link-hover
         &:not(:last-child)
           margin-right: 26px
+          +lg-one(margin-right, 0)
