@@ -91,8 +91,12 @@
     display: flex
     flex-direction: column
     align-items: center
-    transform: translateY(50%)
-    +lg-one(transform, translateY(-37%))
+    // transform: translateY(50%)
+    // +lg-one(transform, translateY(-37%))
+    position: fixed
+    bottom: 30px
+    right: 30px
+    z-index: 66
     button
       background: $orange
       display: flex

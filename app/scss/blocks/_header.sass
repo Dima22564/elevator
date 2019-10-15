@@ -13,6 +13,7 @@
 .header
   position: relative
   z-index: 9999999999
+  overflow: hidden
   .tel
     display: flex
     align-items: center
@@ -35,14 +36,79 @@
       
   &-nav
     padding: 30px 0
-    background: url('../img/bg-header.png')
-    background-repeat: no-repeat
-    background-size: cover
-    background-position: center center
+    // background: url('../img/bg-header.png')
+    // background-repeat: no-repeat
+    // background-size: cover
+    // background-position: center center
+    background: $blue
     position: relative
+    z-index: 666
     +lg
       background-position-x: initial
       background-position-y: initial
+      height: 80px
+    .rails
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      z-index: -1
+      .go-item
+        position: absolute
+        top: 0
+        width: 121px
+        height: 58px
+        transform: skew(16deg)
+        background: $orange
+        opacity: 0.5
+        left: 200px
+        +lg-one(height, 57px)
+      .item1
+        animation-name: go1
+        animation-duration: 20s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+        +lg
+          animation-name: go1-1
+          left: 50px
+      .item2
+        bottom: 0
+        top: initial
+        left: 250px
+        animation-name: go2
+        animation-duration: 25s
+        animation-delay: 3s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+        +lg
+          animation-name: go2-2
+          left: 80px
+      .item3
+        bottom: 0
+        top: initial
+        left: initial
+        right: 250px
+        animation-name: go3
+        animation-duration: 25s
+        animation-delay: 0s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+        +lg
+          animation-name: go3-3
+          right: 80px
+      .item4
+        top: 0
+        left: initial
+        right: 200px
+        animation-name: go4
+        animation-duration: 22s
+        animation-delay: 3s
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+        +lg
+          animation-name: go4-4
+          right: 50px
     .nav-links-wrapper
       z-index: 9999
       display: block
@@ -86,7 +152,7 @@
           flex-wrap: wrap
           margin: 0 0 6px 0
         &:hover
-          background: rgba(15, 65, 95, 0.7)
+          // background: rgba(15, 65, 95, 0.7)
           span
             color: rgba(255, 255, 255, 0.6)
           img
