@@ -83,4 +83,15 @@ $(document).ready(function () {
     $(this).slideUp();
     $('.js-drop-link').removeClass('active');
   });
+  $(window).on('resize', function (e) {
+    if (screen.width < 1280 && $('.video__video').attr('data-width') !== 'medium') {
+      $('.video__video').replaceWith('<video class="video__video" src="./videos/1280х720.mp4" autoplay="autoplay" muted="muted" loop data-width="medium"></video>');
+    } else if (screen.width > 1280 && $('.video__video').attr('data-width') !== 'wide') {
+      $('.video__video').replaceWith('<video class="video__video" src="./videos/1920х1080.mp4" autoplay="autoplay" muted="muted" loop data-width="wide"></video>');
+    }
+
+    if (screen.width < 480 && $('.video__video').attr('data-width') !== 'small') {
+      $('.video__video').replaceWith('<video class="video__video" src="./videos/480.mp4" autoplay="autoplay" muted="muted" loop data-width="small"></video>');
+    }
+  });
 });

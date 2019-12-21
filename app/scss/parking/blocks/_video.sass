@@ -1,0 +1,25 @@
+.video
+  &-wrapper
+    position: relative
+  &__video
+    width: 100%
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    // height: 952px
+    height: calc(100vh - 160px)
+    min-height: 300px
+    object-fit: cover
+    @media screen and ( max-width: 1500px )
+      // height: 800px
+    +media-b(1280)
+      // height: 595px
+    +media-b(960)
+      // height: 530px
+    +media-b(865)
+      // height: 440px
+    +media-b(720)
+      // height: 350px
+    +media-b(600)
+      // height: 300px
