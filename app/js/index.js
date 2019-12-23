@@ -101,7 +101,7 @@ $(document).ready(function () {
     else if(screen.width > 1280 && $('.video__video').attr('data-width') !== 'wide'){
       $('.video__video').replaceWith('<video class="video__video" src="./videos/1920х1080.mp4" autoplay="autoplay" muted="muted" loop data-width="wide"></video>');
     }
-    if(screen.width < 480 && $('.video__video').attr('data-width') !== 'small'){
+    if(screen.width < 990 && $('.video__video').attr('data-width') !== 'small'){
       $('.video__video').replaceWith('<video class="video__video" src="./videos/480.mp4" autoplay="autoplay" muted="muted" loop data-width="small"></video>');
     }
   })

@@ -1505,6 +1505,12 @@ a:active {
   }
 }
 
+@media (max-width: 990px) {
+  .video__video {
+    height: 300px;
+  }
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 63px;
