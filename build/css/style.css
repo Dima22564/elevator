@@ -1339,6 +1339,93 @@ a:active {
   object-fit: cover;
 }
 
+.video__balloon-5 {
+  left: 25vw;
+  top: 10vh;
+}
+
+.video__balloon-6 {
+  left: 46vw;
+  top: 3vh;
+}
+
+.video__balloon-4 {
+  left: 66vw;
+  top: 17vh;
+}
+
+.video__balloon-7 {
+  left: 82vw;
+  top: 3vh;
+}
+
+.video__balloon-2 {
+  left: 36vw;
+  top: 25vh;
+}
+
+.video__balloon-1 {
+  left: 64vw;
+  top: 34vh;
+}
+
+.video__balloon-3 {
+  left: 24vw;
+  top: 61vh;
+}
+
+.balloon {
+  position: absolute;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.balloon:hover .balloon__text {
+  opacity: 1;
+}
+
+.balloon__number {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #f58c1e;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 600;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  z-index: 555;
+}
+
+.balloon__text {
+  background: #ffffff;
+  font-size: 16px;
+  line-height: 16px;
+  color: #f58c1e;
+  font-weight: 600;
+  margin-left: -11px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  overflow: hidden;
+  padding: 10px 14px;
+  opacity: 0;
+}
+
 @media (max-width: 992px) {
   .header .tel {
     display: none;
@@ -1502,6 +1589,10 @@ a:active {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+  }
+
+  .balloon {
+    display: none;
   }
 }
 

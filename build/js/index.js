@@ -84,6 +84,11 @@ $(document).ready(function () {
     $('.js-drop-link').removeClass('active');
   });
   $(window).on('resize', function (e) {
+    video();
+  });
+  video();
+
+  function video() {
     if (screen.width < 1280 && $('.video__video').attr('data-width') !== 'medium') {
       $('.video__video').replaceWith('<video class="video__video" src="./videos/1280х720.mp4" autoplay="autoplay" muted="muted" loop data-width="medium"></video>');
     } else if (screen.width > 1280 && $('.video__video').attr('data-width') !== 'wide') {
@@ -93,5 +98,5 @@ $(document).ready(function () {
     if (screen.width < 990 && $('.video__video').attr('data-width') !== 'small') {
       $('.video__video').replaceWith('<video class="video__video" src="./videos/480.mp4" autoplay="autoplay" muted="muted" loop data-width="small"></video>');
     }
-  });
+  }
 });

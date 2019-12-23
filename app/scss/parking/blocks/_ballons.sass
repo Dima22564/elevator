@@ -1,0 +1,36 @@
+.balloon
+  position: absolute
+  cursor: pointer
+  display: flex
+  align-items: center
+  +lg
+    display: none
+  &:hover
+    .balloon__text
+      opacity: 1
+  &__number
+    width: 56px
+    height: 56px
+    border-radius: 50%
+    background: $orange
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    color: $white
+    font-size: 32px
+    font-weight: 600
+    flex-shrink: 0
+    z-index: 555
+  &__text
+    background: $white
+    font-size: 16px
+    line-height: 16px
+    color: $orange
+    font-weight: 600
+    margin-left: -11px
+    transition: all 0.3s
+    overflow: hidden
+    padding: 10px 14px
+    opacity: 0
+    
+
