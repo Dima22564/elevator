@@ -10,6 +10,11 @@ html(lang="en")
     title БалтЛифт
   body
     .main-wrapper.js-main-wrapper
+    .right-btns
+      button.mess
+        img(src="./img/mess.png", alt="")
+      button.call
+        img(src="./img/phone-white.png", alt="")
 
     //- Header  adapted = true
     header.header
@@ -77,6 +82,80 @@ html(lang="en")
         .video__balloon.video__balloon-3.balloon
           .balloon__number 3
           .balloon__text Twin Park System
+
+    //- Mobile text  adapted = true
+    section.mobile-text
+      .container
+        h2.mobile-text__title PRODUCTS SHOWCASe
+        .product
+          img(src="./img/parking-1.jpg", alt="").product__img
+          p.product__text Tower Parking System
+        .product
+          img(src="./img/parking-2.jpg", alt="").product__img
+          p.product__text Shuttle Parking System
+        .product
+          img(src="./img/parking-3.jpg", alt="").product__img
+          p.product__text Horizontal Conculation System
+        .product
+          img(src="./img/parking-4.jpg", alt="").product__img
+          p.product__text Mini Rotary System
+        .product
+          img(src="./img/parking-5.jpg", alt="").product__img
+          p.product__text Twin Park System
+        .product
+          img(src="./img/parking-6.jpg", alt="").product__img
+          p.product__text Auto Lift System
+        .product
+          img(src="./img/parking-7.jpg", alt="").product__img
+          p.product__text Car Lift Traction
+          
+    //- About adapted = true
+    section.about
+      .container
+        h2.about__title ABOUT US
+        p.about__text.
+          As India strives to take its place on the world center stage, Indians have started going beyond needs to aspirational wants. One clear indication of this, is the increasing number of cars hitting the roads every day. The present infrastructure is very inadequate to serve the need for more and secure parking spaces.systems to accommodate as less as 2 cars further ranging to 2500 cars. 
+        p.about__text.
+          It was this gap between the increasing desire for safe and secure parking and the actual reality that had led us to introduce RR Parkon, the electromechanical car parking solution provider in the year 2000 in India
+        a(href="").about__btn View More
+
+
+    //- Footer  adapted = true
+    footer.footer.footer-parking
+      .contacts
+        .text
+          h3 КОНТАКТЫ
+          p.
+            Работаем с 2004г. #[br]
+            Официальный дистрибьютор IGV в Санкт-Петербурге. #[br]
+            Поставка, монтаж, наладка и техническое обслуживание лифтов и эскалаторов.191187, г.Санкт-Петербург, Гагаринская ул., д.6
+          .tels
+            .wrap
+              a(href="tel:+") 8 (812) 628-01-08
+              a(href="tel:+") 8 (812) 628-01-08
+            .wrap
+              a(href="tel:+") 8 (812) 628-01-08
+              a(href="tel:+") 8 (812) 628-01-08
+          a(href="#", title="title").mail baltlift@inbox.ru
+
+
+    //- popup  adapted = true
+    .popup-wrapper.js-popup
+      .popup-body
+        form(action="").popup-form
+          span.close.js-close
+            img(src="./img/close.png", alt="")
+          p.title Заказать звонок менеджера
+          p.text.
+            Закажите обратный звонок и наш менеджер перезвонит вам в течение #[span 12 минут]  или мы предоставим скидку 10%!
+          input(type="text", placeholder="Введите ваш номер телефона").input
+          p.placeholder 25 знаков доступно для ввода
+          .bottom
+            .checkbox
+              input#check2(type="checkbox") 
+              label(for="check2") #[a(href="#") Соглашение концединциальности]
+            button Отпавить
+
 
 
   script(src="./libs/js/vendor.min.js")

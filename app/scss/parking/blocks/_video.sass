@@ -1,4 +1,6 @@
 .video
+  +lg
+    padding-bottom: 72px
   &-wrapper
     position: relative
   &__video
@@ -23,8 +25,11 @@
       // height: 350px
     +media-b(600)
       // height: 300px
-    +media-b(990)
+    +lg
       height: 300px
+      position: initial
+    +sm
+      height: 200px
   &__balloon-5
     left: 25vw
     top: 10vh
